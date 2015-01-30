@@ -10,7 +10,7 @@ import java.util.Arrays;
 @Extension
 public final class GVRVGitHubScopes extends GitHubOAuthScope {
     public Collection<String> getScopesToRequest () {
-        String s = new String("user");
+        String s = new String("read:org,user:email");
         List<String> list = Arrays.asList(s.split(","));
         return list;
     }
